@@ -45,4 +45,3 @@ spring:
           uri: lb://ms-login
           predicates:
             - Path=/usuarios/**
-            - Path=/generate-token/**
