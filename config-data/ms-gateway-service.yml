@@ -22,3 +22,30 @@ spring:
             - Path=/genero/**
             - Path=/marca/**
             - Path=/producto/**
+
+        - id: ms-venta
+          uri: lb://ms-venta
+          predicates:
+            - Path=/venta/**
+            - Path=/detalleventa/**
+
+        - id: ms-tipoventa
+          uri: lb://ms-tipoventa
+          predicates:
+            - Path=/tipoventa/**
+
+        - id: ms-formapago
+          uri: lb://ms-formapago
+          predicates:
+            - Path=/formapago/**
+
+        - id: ms-clientes
+          uri: lb://ms-clientes
+          predicates:
+            - Path=/cliente/**
+
+        - id: ms-login
+          uri: lb://ms-login
+          predicates:
+            - Path=/usuarios/**
+            - Path=/generate-token/**
