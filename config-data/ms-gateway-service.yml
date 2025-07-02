@@ -18,22 +18,10 @@ spring:
         - id: ms-producto
           uri: lb://ms-producto
           predicates:
-            - Path=/color/**
-
-        - id: ms-producto
-          uri: lb://ms-producto
-          predicates:
-            - Path=/genero/**
-
-        - id: ms-producto
-          uri: lb://ms-producto
-          predicates:
-            - Path=/marca/**
-
-        - id: ms-producto
-          uri: lb://ms-producto
-          predicates:
+            - Path=/color,marca/**
             - Path=/producto/**
+            - Path=/marca/**
+            - Path=/genero/**
 
         - id: ms-venta
           uri: lb://ms-venta
