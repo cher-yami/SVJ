@@ -39,8 +39,8 @@ spring:
           predicates:
             - Path=/formapago/**
 
-        - id: ms-clientes
-          uri: lb://ms-clientes
+        - id: ms-cliente
+          uri: lb://ms-cliente
           predicates:
             - Path=/cliente/**
 
