@@ -18,7 +18,7 @@ spring:
         - id: ms-producto
           uri: lb://ms-producto
           predicates:
-            - Path=/producto/**,/color/**,/marca/**,/genero/**
+            - Path=/producto/**
 
         - id: ms-venta
           uri: lb://ms-venta
